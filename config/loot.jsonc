@@ -1,0 +1,436 @@
+//The loot config is separated into 4 parts. Each part from top to bottom will superseed the one above. 
+//
+//So an item will first check map specfic item, then global specfic item, then map specfic category, then global category
+{
+    "globalCategories": //4th Priority (Lowest)
+    {
+        "57864bb7245977548b3b66c2": { "multi": 1.00 }, //Tools
+        "57864c8c245977548867e7f1": { "multi": 1.00 }, //Medical Supplies
+        "57864e4c24597754843f8723": { "multi": 1.00 }, //Flammable materials (Lubricant)
+        "57864a3d24597754843f8721": { "multi": 1.00 }, //Jewelry
+        "57864c322459775490116fbf": { "multi": 1.00 }, //HouseholdGoods
+        "57864a66245977548f04a81f": { "multi": 1.00 }, //Electronics
+        "57864ada245977548638de91": { "multi": 1.00 }, //BuildingMaterial
+        "57864ee62459775490116fc1": { "multi": 1.00 }, //Battery
+        "5d650c3e815116009f6201d2": { "multi": 1.00 }, //Fuel
+        "590c745b86f7743cc433c5f2": { "multi": 1.00 }, //Other
+
+        "57bef4c42459772e8d35a53b": { "multi": 1.00 }, //GearComponents
+        "5448e54d4bdc2dcc718b4568": { "multi": 1.00 }, //Armor
+        "5448bf274bdc2dfc2f8b456a": { "multi": 1.00 }, //Secured Containers
+        "5671435f4bdc2d96058b4569": { "multi": 0.45 }, //Containers & Case
+        "5795f317245977243854e041": { "multi": 1.00 }, //Simple Containers
+        "5448e5284bdc2dcb718b4567": { "multi": 1.00 }, //Vest
+        "5448e53e4bdc2d60728b4567": { "multi": 1.00 }, //Backpack
+        "5645bcb74bdc2ded0b8b4578": { "multi": 1.00 }, //Headset
+        "5448e5724bdc2ddf718b4568": { "multi": 1.00 }, //Visor
+        "5a341c4086f77401f2541505": { "multi": 1.00 }, //Headwear
+        "5a341c4686f77469e155819e": { "multi": 1.00 }, //Facecover
+        "5b3f15d486f77432d0509248": { "multi": 1.00 }, //Armband
+        "644120aa86ffbe10ee032b6f": { "multi": 1.00 }, //ArmorPlate
+
+        "55818a304bdc2db5418b457d": { "multi": 1.00 }, //Receiver
+        "55818a684bdc2ddd698b456d": { "multi": 1.00 }, //PistolGrip
+        "56ea9461d2720b67698b456f": { "multi": 1.00 }, //Gasblock
+        "55818a104bdc2db9688b4569": { "multi": 1.00 }, //Handguard
+        "555ef6e44bdc2de9068b457e": { "multi": 1.00 }, //Barrel
+        "55818a594bdc2db9688b456a": { "multi": 1.00 }, //Stock
+        "55818b224bdc2dde698b456f": { "multi": 1.00 }, //Mounts
+        "5448bc234bdc2d3c308b4569": { "multi": 1.00 }, //Magazines
+        "55818b014bdc2ddc698b456b": { "multi": 1.00 }, //Launcher
+        "627a137bf21bc425b06ab944": { "multi": 1.00 }, //Grenade Launcher Magazine
+        "610720f290b75a49ff2e5e25": { "multi": 1.00 }, //CylinderMagazine
+        "55818a6f4bdc2db9688b456b": { "multi": 1.00 }, //Charging Handle
+        "5a74651486f7744e73386dd1": { "multi": 1.00 }, //AuxiliaryMod
+        "55818afb4bdc2dde698b456d": { "multi": 1.00 }, //Bipods
+        "55818af64bdc2d5b648b4570": { "multi": 1.00 }, //Foregrips
+        "55818b084bdc2d5b648b4571": { "multi": 1.00 }, //Flashlights
+        "5b5f73c486f77447ec5d7704": { "multi": 1.00 }, //Laser target pointers
+        "55818b164bdc2ddc698b456c": { "multi": 1.00 }, //Tactical combo devices
+        "55818b0e4bdc2dde698b456e": { "multi": 1.00 }, //LightLaser
+        "550aa4bf4bdc2dd6348b456b": { "multi": 1.00 }, //Flashhiders & brakes
+        "5b5f72f786f77447ec5d7702": { "multi": 1.00 }, //Muzzle adapters
+        "550aa4cd4bdc2dd8348b456c": { "multi": 1.00 }, //Silencer
+        "550aa4dd4bdc2dc9348b4569": { "multi": 1.00 }, //MuzzleCombo
+
+        "55818add4bdc2d5b648b456f": { "multi": 1.00 }, //Assault scopes
+        "55818ad54bdc2ddc698b4569": { "multi": 1.00 }, //Collimators
+        "55818acf4bdc2dde698b456b": { "multi": 1.00 }, //Compact collimators
+        "55818ac54bdc2d5b648b456e": { "multi": 1.00 }, //Iron sights
+        "55818ae44bdc2dde698b456c": { "multi": 1.00 }, //Optics
+        "55818aeb4bdc2ddc698b456a": { "multi": 1.00 }, //Special scopes
+        "5a2c3a9486f774688b05e574": { "multi": 1.00 }, //Night vison
+
+        "543be6564bdc2df4348b4568": { "multi": 1.00 }, //Throwable
+        "5447e1d04bdc2dff2f8b4567": { "multi": 1.00 }, //Melee Weapons
+        "5447bed64bdc2d97278b4568": { "multi": 1.00 }, //Machine Guns
+        "5447b6254bdc2dc3278b4568": { "multi": 1.00 }, //SnipersRifles
+        "5447b5e04bdc2d62278b4567": { "multi": 1.00 }, //Smgs
+        "5447b6094bdc2dc3278b4567": { "multi": 1.00 }, //Shotguns
+        "5447b5cf4bdc2d65278b4567": { "multi": 1.00 }, //Pistol
+        "617f1ef5e8b54b0998387733": { "multi": 1.00 }, //Revolver
+        "5447b6194bdc2d67278b4567": { "multi": 1.00 }, //MarksmanRifles
+        "5447b5f14bdc2d61278b4567": { "multi": 1.00 }, //AssaultRifles
+        "5447b5fc4bdc2d87278b4567": { "multi": 1.00 }, //AssaultCarbines
+        "5447bedf4bdc2d87278b4568": { "multi": 1.00 }, //GrenadeLauncher
+
+        "543be5cb4bdc2deb348b4568": { "multi": 1.15 }, //Ammobox
+        "5485a8684bdc2da71d8b4567": { "multi": 1.00 }, //Rounds
+
+        "5448e8d04bdc2ddf718b4569": { "multi": 1.00 }, //Food
+        "5448e8d64bdc2dce718b4568": { "multi": 1.00 }, //Drinks
+
+        "5448f3a64bdc2d60728b456a": { "multi": 1.00 }, //Stimulator
+        "5448f3ac4bdc2dce718b4569": { "multi": 1.00 }, //Injury Treatments
+        "5448f39d4bdc2d0a728b4568": { "multi": 1.00 }, //Medkit
+        "5448f3a14bdc2d27728b4569": { "multi": 1.00 }, //Drugs
+
+        "5c164d2286f774194c5e69fa": { "multi": 1.00 }, //Keycards
+        "5c99f98d86f7745c314214b3": { "multi": 1.00 }, //MechanicalKeys
+
+        "5448ecbe4bdc2d60728b4568": { "multi": 1.00 }, //Info items
+        "5447e0e74bdc2d3c308b4567": { "multi": 1.00 }, //Special Equipments
+        "66abb0743f4d8b145b1612c1": { "multi": 1.00 }, //Multitools
+        "5f4fbaaca5573a5ac31db429": { "multi": 1.00 }, //Compass
+        "61605ddea09d851a0a0c1bbc": { "multi": 1.00 }, //Portable Range Finder
+        "567849dd4bdc2d150f8b456e": { "multi": 1.00 }, //Maps
+        "543be5dd4bdc2deb348b4569": { "multi": 1.00 }, //Money
+        "62f109593b54472778797866": { "multi": 1.00 }, //RandomLootContainer
+
+        "616eb7aea207f41933308f46": { "multi": 0.22 }, //Repair Kits
+
+        "6759673c76e93d8eb20b2080": { "multi": 1.00 }, //Fliers
+        "63da6da4784a55176c018dba": { "multi": 1.00 }, //Hideout Area Container ???
+        "6672e40ebb23210ae87d39eb": { "multi": 1.00 }, //PlantingKits
+        "684070bd2f743ae53b0b80ec": { "multi": 1.00 } //DialogItem
+    },
+    "globalItems": //2nd Priority
+    {
+        "items":
+        {
+            "675a04fdb8913ff13e0496bb": { "multi": 2.00 }, //Killa and tagilla ANIME poster
+            "5d1b313086f77425227d1678": { "multi": 1.00 }, //Phase Control Relay
+            "5d1c774f86f7746d6620f8db": { "multi": 1.00 }, //Radiator Helix
+            "5d1b2fa286f77425227d1674": { "multi": 1.00 }, //Electric Motor
+            "5d1b385e86f774252167b98a": { "multi": 1.00 } //Water Filter
+        }
+    },
+    "mapSpecific":
+    {
+        "bigmap": //Customs
+        {
+            "totalLootMultiplier": 1.10,
+            "categories": //3rd Priority
+            {
+                "5c164d2286f774194c5e69fa": { "multi": 1.00 }, //Keycards
+                "5c99f98d86f7745c314214b3": { "multi": 6.20 }, //MechanicalKeys
+                "57864c8c245977548867e7f1": { "multi": 1.20 }, //Medical Supplies
+                "5448f3a64bdc2d60728b456a": { "multi": 1.20 }, //Stimulator
+                "5448f3ac4bdc2dce718b4569": { "multi": 1.20 }, //Injury Treatments
+                "5448f3a14bdc2d27728b4569": { "multi": 1.20 }, //Drugs
+                "5448f39d4bdc2d0a728b4568": { "multi": 1.20 } //Medkit
+            },
+            "items": //1st Priority (Highest)
+            {
+                "5e42c81886f7742a01529f57": { "multi": 0.5 }, //Object #11SR keycard
+                "5e42c83786f7742a021fdf3c": { "multi": 0.556 }, //Object #21WS keycard
+                "5c1d0efb86f7744baf2e7b7b": { "multi": 0.273 }, //TerraGroup Labs keycard (Red)
+                "5c1d0f4986f7744bb01837fa": { "multi": 0.289 }, //TerraGroup Labs keycard (Black)
+                "5c1e495a86f7743109743dfb": { "multi": 0.289 }, //TerraGroup Labs keycard (Violet)
+                "5c1d0d6d86f7744bb2683e1f": { "multi": 0.307 }, //TerraGroup Labs keycard (Yellow)
+                "5c1d0dc586f7744baf2e7b79": { "multi": 0.305 }, //TerraGroup Labs keycard (Green)
+                "5c1d0c5f86f7744bb2683cf0": { "multi": 0.349 }, //TerraGroup Labs keycard (Blue)
+                "5c94bbff86f7747ee735c08f": { "multi": 5.6 } //TerraGroup Labs access keycard
+            }
+        },
+
+        "factory4_day": //Factory - Day
+        {
+            "totalLootMultiplier": 1.20,
+            "categories": //3rd Priority
+            {
+
+            },
+            "items": //1st Priority (Highest)
+            {
+
+            }
+        },
+
+        "factory4_night": //Factory - Night
+        {
+            "totalLootMultiplier": 1.20,
+            "categories": //3rd Priority
+            {
+
+            },
+            "items": //1st Priority (Highest)
+            {
+                "5c94bbff86f7747ee735c08f": { "multi": 8.4 } //TerraGroup Labs access keycard
+            }
+        },
+
+        "interchange": //Interchange
+        {
+            "totalLootMultiplier": 1.5,
+            "categories": //3rd Priority
+            {
+                "5448e8d04bdc2ddf718b4569": { "multi": 1.20 }, //Food
+                "5448e8d64bdc2dce718b4568": { "multi": 1.20 }, //Drinks
+                "57864a66245977548f04a81f": { "multi": 1.35 }, //Electronics
+                "5c164d2286f774194c5e69fa": { "multi": 1.00 }, //Keycards
+                "57864a3d24597754843f8721": { "multi": 1.70 } //Jewelry
+
+            },
+            "items": //1st Priority (Highest)
+            {
+                "5c12620d86f7743f8b198b72": { "multi": 1.00 }, //Tetriz                
+                "5d1b385e86f774252167b98a": { "multi": 1.00 }, //Water Filter
+                "5d1b2fa286f77425227d1674": { "multi": 1.00 } //Electric Motor
+            }
+        },
+
+        "laboratory": //Terragroup Labs
+        {
+            "totalLootMultiplier": 1.25,
+            "categories": //3rd Priority
+            {
+                "57864a66245977548f04a81f": { "multi": 1.70 }, //Electronics
+                "5448f3a64bdc2d60728b456a": { "multi": 1.00 }, //Stimulator
+                "57864c8c245977548867e7f1": { "multi": 1.00 }, //Medical Supplies
+                "57864e4c24597754843f8723": { "multi": 1.00 }, //Flammable materials (Lubricant)
+                "5c164d2286f774194c5e69fa": { "multi": 0.65 }, //Keycards
+                "5448ecbe4bdc2d60728b4568": { "multi": 1.60 }, //Info items
+                "5448f39d4bdc2d0a728b4568": { "multi": 1.20 }, //Medkit
+                "57864a3d24597754843f8721": { "multi": 0.90 } //Jewelry
+            },
+            "items": //1st Priority (Highest)
+            {
+                "5c12613b86f7743bbe2c3f76": { "multi": 0.8}, //intelligence
+                "6389c8c5dbfd5e4b95197e6b": { "multi": 0.6},
+
+                "5c0530ee86f774697952d952": { "multi": 0.9 }, //Ledx
+
+                //Lab-only electronics - bring to ~0.7 avg/run. Was Electronics cat mult 2.20.
+                "6389c85357baa773a825b356": { "multi": 1.1 }, //Advanced current converter (1.10 -> ~0.70)
+                "6389c7f115805221fb410466": { "multi": 1.1 }, //Far-forward GPS amplifier (2-run mean ~0.64; set true-mean ~0.72)
+
+                //Textbooks - guarantee ~15% avg/run (quest items). Estimates from 250-run dump; verify + bump if under.
+                "6389c92d52123d5dd17f8876": { "multi": 20.0 }, //Advanced Electronic Materials textbook (saturating: 8.6->0.100, 14->0.124; pushing for >=0.15)
+                "6389c8fb46b54c634724d847": { "multi": 16.0 } //Silicon Optoelectronic ICs textbook (15.0 gave 0.172; bumped for margin over 0.15)
+            }
+        },
+
+        "lighthouse": //Lighthouse
+        {
+            "totalLootMultiplier": 1.50,
+            "categories": //3rd Priority
+            {
+                "5448f3a64bdc2d60728b456a": { "multi": 1.00 }, //Stimulator
+                "57864a66245977548f04a81f": { "multi": 1.50 }, //Electronics
+                "5448e8d04bdc2ddf718b4569": { "multi": 1.00 }, //Food
+                "5448e8d64bdc2dce718b4568": { "multi": 1.00 }, //Drinks
+                "57864e4c24597754843f8723": { "multi": 1.00 }, //Flammable materials (Lubricant)
+                "5448ecbe4bdc2d60728b4568": { "multi": 1.60 }, //Info items
+                "57864a3d24597754843f8721": { "multi": 1.20 }, //Jewelry
+                "5c164d2286f774194c5e69fa": { "multi": 1.00 }, //Keycards
+                "57864bb7245977548b3b66c2": { "multi": 1.00 }, //Tools
+                "616eb7aea207f41933308f46": { "multi": 0.07 }
+            },
+            "items": //1st Priority (Highest)
+            {
+                "5c94bbff86f7747ee735c08f": { "multi": 10.9 }, //TerraGroup Labs access keycard - 13 live points
+
+                //Textbooks - guarantee ~15% avg/run (quest items). Estimates from 250-run dump; verify + bump if under.
+                "6389c92d52123d5dd17f8876": { "multi": 9.4 }, //Advanced Electronic Materials textbook (was 4.0 -> 0.064; target ~0.15)
+                "6389c8fb46b54c634724d847": { "multi": 48.0 }, //Silicon Optoelectronic ICs textbook (saturating: 15->0.088, 28->0.128; pushing for >=0.15)
+
+                //Military electronics nerf - cut to ~1/4 current, floored at 0.5 avg/run. Was Electronics cat mult 1.50.
+                "5d03775b86f774203e7e0c4b": { "multi": 0.375 }, //Phased array element (2.16 -> ~0.54)
+                "5d0377ce86f774186372f689": { "multi": 0.375 }, //Iridium thermal module (2.08 -> ~0.52)
+                "5c05308086f7746b2101e90b": { "multi": 0.550 }, //Virtex processor (2-run mean ~0.52; set true-mean ~0.57)
+                "5c05300686f7746dce784e5d": { "multi": 0.560 }, //VPX Flash Storage (2-run mean ~0.55)
+                "5c052f6886f7746b1e3db148": { "multi": 0.430 }, //Military COFDM transmitter (2-run mean ~0.51; set true-mean ~0.57)
+                "5d03784a86f774203e7e0c4d": { "multi": 1.320 }, //Military gyrotachometer (2-run mean ~0.47; set true-mean ~0.57)
+
+                "5e42c81886f7742a01529f57": { "multi": 0.645 }, //Object #11SR keycard
+                "5e42c83786f7742a021fdf3c": { "multi": 0.699 }, //Object #21WS keycard
+                "5c1d0d6d86f7744bb2683e1f": { "multi": 0.727 }, //TerraGroup Labs keycard (Yellow)
+                "5c1d0efb86f7744baf2e7b7b": { "multi": 0.758 } //TerraGroup Labs keycard (Red)
+            }
+        },
+
+        "rezervbase": //Reserve
+        {
+            "totalLootMultiplier": 1.65,
+            "categories": //3rd Priority
+            {
+                "57864c8c245977548867e7f1": { "multi": 2.00 }, //Medical Supplies
+                "5448f3a64bdc2d60728b456a": { "multi": 2.00 }, //Stimulator
+                "5448f3ac4bdc2dce718b4569": { "multi": 1.50 }, //Injury Treatments
+                "5448f39d4bdc2d0a728b4568": { "multi": 2.00 }, //Medkit
+                "5671435f4bdc2d96058b4569": { "multi": 0.40 }, //Containers & Case
+                "5c99f98d86f7745c314214b3": { "multi": 6.00 }, //MechanicalKeys
+
+                "5448f3a14bdc2d27728b4569": { "multi": 1.50 }, //Drugs
+                "5447bed64bdc2d97278b4568": { "multi": 1.50 }, //Machine Guns
+                "5447b6254bdc2dc3278b4568": { "multi": 1.50 }, //SnipersRifles
+                "5447b5e04bdc2d62278b4567": { "multi": 1.50 }, //SMGs
+                "5447b6094bdc2dc3278b4567": { "multi": 1.50 }, //Shotguns
+                "5447b5cf4bdc2d65278b4567": { "multi": 1.50 }, //Pistol
+                "617f1ef5e8b54b0998387733": { "multi": 1.50 }, //Revolver
+                "5447b6194bdc2d67278b4567": { "multi": 1.50 }, //MarksmanRifles
+                "5447b5f14bdc2d61278b4567": { "multi": 1.50 }, //AssaultRifles
+                "5447b5fc4bdc2d87278b4567": { "multi": 1.50 }, //AssaultCarbines
+                "57864a66245977548f04a81f": { "multi": 1.20 } //Electronics
+            },
+            "items": //1st Priority (Highest)
+            {
+                "5c12613b86f7743bbe2c3f76": { "multi": 0.5}, //intelligence
+
+                "5d1b385e86f774252167b98a": { "multi": 1.0 }, //Water filter
+                "5d1b313086f77425227d1678": { "multi": 1.0 }, //Phase control relay
+                "5d1c774f86f7746d6620f8db": { "multi": 1.0 }, //Radiator helix
+                "5d1b2fa286f77425227d1674": { "multi": 1.0 }, //Electric motor
+
+                //Military electronics nerf - cut to ~1/4 current, floored at 0.5 avg/run. Was Electronics cat mult 1.20.
+                "5d03775b86f774203e7e0c4b": { "multi": 0.320 }, //Phased array element (2-run mean ~0.54; set true-mean ~0.57)
+                "5d0377ce86f774186372f689": { "multi": 1.330 }, //Iridium thermal module (bumped: still ~0.47; set true-mean ~0.57)
+                "5c05308086f7746b2101e90b": { "multi": 0.500 }, //Virtex processor (2-run mean ~0.54)
+                "5c05300686f7746dce784e5d": { "multi": 0.460 }, //VPX Flash Storage (2-run mean ~0.50; set true-mean ~0.57)
+                "5c052f6886f7746b1e3db148": { "multi": 0.350 }, //Military COFDM transmitter (2-run mean ~0.54; set true-mean ~0.57)
+                "5d03784a86f774203e7e0c4d": { "multi": 0.320 }, //Military gyrotachometer (2-run mean ~0.67; set true-mean ~0.72)
+
+                "5644bd2b4bdc2d3b4c8b4572": { "multi": 0.3 }, //Kalashnikov AK-74N 5.45x39
+                "57dc2fa62459775949412633": { "multi": 0.3 }, //Kalashnikov AKS-74U 5.45x39
+                "583990e32459771419544dd2": { "multi": 0.3 }, //Kalashnikov AKS-74UN 5.45x39
+                "5839a40f24597726f856b511": { "multi": 0.3 }, //Kalashnikov AKS-74UB 5.45x39
+
+                "5c13cd2486f774072c757944": { "multi": 1.0 }, //Soap
+                "57347c93245977448d35f6e3": { "multi": 1.0 }, //Toothpaste
+                "5d40419286f774318526545f": { "multi": 1.0 }, //Metal cutting scissors
+                "5734758f24597738025ee253": { "multi": 1.0 }, //Golden neck chain
+                "57347ca924597744596b4e71": { "multi": 1.0 }, //Graphics card
+                "5e42c83786f7742a021fdf3c": { "multi": 0.312 }, //Object #21WS keycard
+                "5c1d0f4986f7744bb01837fa": { "multi": 0.323 }, //TerraGroup Labs keycard (Black)
+                "5c1d0efb86f7744baf2e7b7b": { "multi": 0.281 }, //TerraGroup Labs keycard (Red)
+                "5e42c81886f7742a01529f57": { "multi": 0.325 }, //Object #11SR keycard
+                "5c1d0d6d86f7744bb2683e1f": { "multi": 0.255 }, //TerraGroup Labs keycard (Yellow)
+                "5c1d0c5f86f7744bb2683cf0": { "multi": 0.426 }, //TerraGroup Labs keycard (Blue)
+                "5c1e495a86f7743109743dfb": { "multi": 0.433 }, //TerraGroup Labs keycard (Violet)
+                "5c1d0dc586f7744baf2e7b79": { "multi": 0.333 } //TerraGroup Labs keycard (Green)
+            }
+        },
+
+        "shoreline": //Shoreline
+        {
+            "totalLootMultiplier": 1.20,
+            "categories": //3rd Priority
+            {
+                "57864c8c245977548867e7f1": { "multi": 1.50 }, //Medical Supplies
+                "5448f3a64bdc2d60728b456a": { "multi": 1.50 }, //Stimulator
+                "5448f3ac4bdc2dce718b4569": { "multi": 1.50 }, //Injury Treatments
+                "5448f39d4bdc2d0a728b4568": { "multi": 1.50 }, //Medkit
+
+                "5c164d2286f774194c5e69fa": { "multi": 1.00 }, //Keycards
+                "5c99f98d86f7745c314214b3": { "multi": 1 } //MechanicalKeys
+            },
+            "items": //1st Priority (Highest)
+            {
+                "5c94bbff86f7747ee735c08f": { "multi": 36.0 }, //TerraGroup Labs access keycard - only 2 live points - needs an extreme value
+                "5c1d0d6d86f7744bb2683e1f": { "multi": 0.282 }, //TerraGroup Labs keycard (Yellow)
+                "5c1d0efb86f7744baf2e7b7b": { "multi": 0.226 }, //TerraGroup Labs keycard (Red)
+                "5c1d0c5f86f7744bb2683cf0": { "multi": 0.323 } //TerraGroup Labs keycard (Blue)
+            }
+        },
+
+        "tarkovstreets": //Streets of tarkov
+        {
+            "totalLootMultiplier": 1.20,
+            "categories": //3rd Priority
+            {
+                "5c99f98d86f7745c314214b3": { "multi": 2.00 } //MechanicalKeys
+            },
+            "items": //1st Priority (Highest)
+            {
+                "64d4b23dc1b37504b41ac2b6": { "multi": 0.2 },
+                "5c1d0d6d86f7744bb2683e1f": { "multi": 0.303 }, //TerraGroup Labs keycard (Yellow)
+                "5c94bbff86f7747ee735c08f": { "multi": 3.0 }, //TerraGroup Labs access keycard
+                "5c1d0dc586f7744baf2e7b79": { "multi": 0.323 }, //TerraGroup Labs keycard (Green)
+                "5e42c83786f7742a021fdf3c": { "multi": 0.339 }, //Object #21WS keycard
+                "5c1d0efb86f7744baf2e7b7b": { "multi": 0.377 }, //TerraGroup Labs keycard (Red)
+                "5c1d0c5f86f7744bb2683cf0": { "multi": 0.377 }, //TerraGroup Labs keycard (Blue)
+                "5c1d0f4986f7744bb01837fa": { "multi": 0.335 }, //TerraGroup Labs keycard (Black)
+                "5c1e495a86f7743109743dfb": { "multi": 0.426 }, //TerraGroup Labs keycard (Violet)
+                "5e42c81886f7742a01529f57": { "multi": 0.355 } //Object #11SR keycard
+            }
+        },
+
+        "woods": //Woods
+        {
+            "totalLootMultiplier": 1.20,
+            "categories": //3rd Priority
+            {
+                "543be5cb4bdc2deb348b4568": { "multi": 1.0 }, //Ammobox
+                "5c164d2286f774194c5e69fa": { "multi": 1.00 }, //Keycards
+                "616eb7aea207f41933308f46": { "multi": 12.0 }
+            },
+            "items": //1st Priority (Highest)
+            {
+                "5c94bbff86f7747ee735c08f": { "multi": 250.0 }, //TerraGroup Labs access keycard - a SINGLE live point (Arena_key); will saturate well below 1.0/raid
+                "64d4b23dc1b37504b41ac2b6": { "multi": 1.0 },
+                "5c1e495a86f7743109743dfb": { "multi": 0.714 } //TerraGroup Labs keycard (Violet)
+            }
+        },
+
+        "sandbox": //Ground Zero
+        {
+            "totalLootMultiplier": 1.20,
+            "categories": //3rd Priority
+            {
+
+            },
+            "items": //1st Priority (Highest)
+            {
+
+            }
+        },
+        "sandbox_high": //Ground Zero high level
+        {
+            "totalLootMultiplier": 1.30,
+            "categories": //3rd Priority
+            {
+
+            },
+            "items": //1st Priority (Highest)
+            {
+
+            }
+        },
+        "labyrinth":
+        {
+            "totalLootMultiplier": 1.0,
+            "categories": //3rd Priority
+            {
+                "5671435f4bdc2d96058b4569": { "multi": 0.75 } //Containers & Case
+            },
+            "items": //1st Priority (Highest)
+            {
+
+            }
+        },
+        // Icebreaker (Manimal's modded map). It reuses the vanilla "Suburbs"
+        "suburbs":
+        {
+            "totalLootMultiplier": 1.0,
+            "categories": //3rd Priority
+            {
+
+            },
+            "items": //1st Priority (Highest)
+            {
+
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "editProbabilities": true,      //Main enabling of the mod.
+    "cacheLocationData": true,      //Cache location loot data in memory after startup (parse each loot file once, not every raid/dump run). Big speed-up, uses more RAM.
+
+    "captureRealRuns": true,        //Records every REAL raid's loot to output/history/<map>/ (for the web UI run history + a future map view)
+    "captureGearSnapshots": true,   //Forensic: dumps each player's FULL inventory (containers included) at raid start + end to output/history/gear/ (for tracking vanishing items)
+    "dataDump": false,              //Dumps data on server start
+    "categorize": true,             //Categorizes the data dump
+    "convertToCompact": true,       //Output is always JSON now. true = minified (small file), false = indented (readable).
+    "runAllMaps": false,             //Data dumps every map
+    "mapToGenerate": "laboratory",  //If runAllMaps is diabled, will only run this map.
+    "timesToGenerate": 1000,         //How many times to generate to get better averages.
+
+    "convertToName": true,          //Convert from item ID to name
+    "localizeNames": true,          //Localize rather than using the default names
+    "localization": "en",            //The localization to pull names from
+    "HarmlessErrorLogging": true //harmless error logging
+
+    //Map names
+    /*
+        "bigmap"            //Customs
+        "factory4_day"      //Factory - Day
+        "factory4_night"    //Factory - Night
+        "interchange"       //Interchange
+        "laboratory"        //Labs
+        "lighthouse"        //Lighthouse
+        "rezervbase"        //Rezerv
+        "shoreline"         //Shoreline
+        "tarkovstreets"     //Streets of Tarkov
+        "woods"             //Woods
+        "sandbox"           //Ground Zero
+    */
+}

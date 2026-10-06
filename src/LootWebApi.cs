@@ -36,8 +36,10 @@ public class LootWebApi(ModHelper modHelper) : IHttpListener, IOnLoad
     {
         var routes = new List<Leaves.RouteInfo>
         {
-            new Leaves.RouteInfo("GET", "/lootfuckery/ui/dump", "Simulated-dump viewer.", "ui"),
-            new Leaves.RouteInfo("GET", "/lootfuckery/ui/history", "Real-raid capture list.", "ui"),
+            // The /lootfuckery/ui/* page files are served by the Leaves-WebUI mod now, which registers
+            // them under "Web UI (static files)". Left commented so the move is visible.
+            //   new Leaves.RouteInfo("GET", "/lootfuckery/ui/dump", "Simulated-dump viewer.", "ui"),
+            //   new Leaves.RouteInfo("GET", "/lootfuckery/ui/history", "Real-raid capture list.", "ui"),
             new Leaves.RouteInfo("GET", "/lootfuckery/api/dumps", "List the loot_<map>_<timestamp>.json dump files, newest first.", "api"),
             new Leaves.RouteInfo("GET", "/lootfuckery/api/dump?file=", "One dump file's contents.", "api"),
             new Leaves.RouteInfo("GET", "/lootfuckery/api/runs", "Captured-run index, newest first.", "api"),
@@ -51,16 +53,31 @@ public class LootWebApi(ModHelper modHelper) : IHttpListener, IOnLoad
 
     private readonly string modPath = modHelper.GetAbsolutePathToModFolder(System.Reflection.Assembly.GetExecutingAssembly());
 
-    // Files are read fresh on each request (these pages are hit rarely) so edits to the deployed HTML
-    // show up without a rebuild.
-    private string UiDir => System.IO.Path.Combine(modPath, "assets", "ui");
+    // The two page files (dump.html, history.html) moved to the Leaves-WebUI mod, which serves every
+    // Leaves mod's static UI files. The map-asset serving below (assets/maps) stays - that's mod data,
+    // not a UI file. See WEBUI_EXTRACTION_PLAN.md.
+    //   private string UiDir => System.IO.Path.Combine(modPath, "assets", "ui");
     private string OutputDir => System.IO.Path.Combine(modPath, "output");
     private string HistoryDir => System.IO.Path.Combine(modPath, "output", "history");
     private string MapsDir => System.IO.Path.Combine(modPath, "assets", "maps");
 
+    // Page paths now served by the Leaves-WebUI mod. Excluded here so exactly one listener claims each
+    // (listener dispatch order is not guaranteed). The rest of /lootfuckery/ - /api/* and the
+    // /lootfuckery/maps/* asset serves - is still ours.
+    private static readonly HashSet<string> MovedToWebUiMod = new(StringComparer.OrdinalIgnoreCase)
+    {
+        "/lootfuckery/ui/dump",
+        "/lootfuckery/ui/history",
+    };
+
     public bool CanHandle(MongoId sessionId, HttpContext context)
     {
-        return Leaves.HttpUtils.HasPrefix(context, Prefix);
+        if (!Leaves.HttpUtils.HasPrefix(context, Prefix))
+        {
+            return false;
+        }
+        string path = (context.Request.Path.Value ?? "").TrimEnd('/');
+        return !MovedToWebUiMod.Contains(path);
     }
 
     public async Task Handle(MongoId sessionId, HttpContext context)
@@ -70,15 +87,9 @@ public class LootWebApi(ModHelper modHelper) : IHttpListener, IOnLoad
 
         try
         {
-            if (method == "GET" && path.EndsWith("/ui/dump", StringComparison.OrdinalIgnoreCase))
-            {
-                await Leaves.HttpUtils.ServeFile(context, System.IO.Path.Combine(UiDir, "dump.html"), "text/html; charset=utf-8");
-            }
-            else if (method == "GET" && path.EndsWith("/ui/history", StringComparison.OrdinalIgnoreCase))
-            {
-                await Leaves.HttpUtils.ServeFile(context, System.IO.Path.Combine(UiDir, "history.html"), "text/html; charset=utf-8");
-            }
-            else if (method == "GET" && path.EndsWith("/api/dumps", StringComparison.OrdinalIgnoreCase))
+            // /lootfuckery/ui/dump and /ui/history static serves moved to the Leaves-WebUI mod
+            // (dump.html / history.html); CanHandle already routes those paths elsewhere.
+            if (method == "GET" && path.EndsWith("/api/dumps", StringComparison.OrdinalIgnoreCase))
             {
                 await HandleDumpsList(context);
             }

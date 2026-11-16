@@ -115,3 +115,6 @@ Old Config files ARE compatible.
 ## 1.4.2
 - Updated to 3.11
 - Added new parents introduced in said patch.
+
+## 2.0.0
+- Updated to SPT 4.0.x (not compatible with 4.1.x).

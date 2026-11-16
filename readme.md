@@ -11,6 +11,10 @@ This mod allows you to do 3 things.
 
 3. It allows you to generate a statistical analysis of targeted items over many runs.
 
+## Requirements
+- [Leaves-LeavesUtil](https://github.com/DeadLeavez/Leaves-LeavesUtil) ([latest release](https://github.com/DeadLeavez/Leaves-LeavesUtil/releases/latest)) - required.
+- [Leaves-WebUI](https://github.com/DeadLeavez/Leaves-WebUI) - optional, adds the browser pages for this mod.
+
 # Changelog
 ## 1.0.0
 Initial Release
